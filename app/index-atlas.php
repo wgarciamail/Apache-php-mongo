@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__.'/vendor/autoload.php';
-
+echo "<h1>Atlas</h1>
+<p>Connecting to Atlas</p>";
 $uri = "mongodb+srv://wgarciamail:WRstY8eJ4oLclv5J@todo-example.b2340xz.mongodb.net/test?ssl=true&retryWrites=true&w=majority";
 
 // Specify Stable API version 1

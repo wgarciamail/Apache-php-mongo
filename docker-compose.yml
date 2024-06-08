@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  php-apache:
+    build:
+    # Dockerfile path
+      context: .
+      dockerfile: Dockerfile  
+    # ADD local ./app directory to /var/www/html in the container
+    volumes:
+      - ./app:/var/www/html 
+    ports:
+      - 8000:80  
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"

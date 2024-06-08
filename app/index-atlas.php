@@ -17,6 +17,3 @@ try {
 } catch (Exception $e) {
     printf($e->getMessage());
 }
-
-
-?>
